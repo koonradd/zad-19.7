@@ -1,6 +1,6 @@
 import uuid from "uuid";
 
-const ADD_COMMENT = "ADD_COMMENT";
+export const ADD_COMMENT = "ADD_COMMENT";
 
 function addComment(text) {
   return {
@@ -10,7 +10,7 @@ function addComment(text) {
   };
 }
 
-const EDIT_COMMENT = "EDIT_COMMENT";
+export const EDIT_COMMENT = "EDIT_COMMENT";
 
 function editComment(text, id) {
   return {
@@ -20,7 +20,7 @@ function editComment(text, id) {
   };
 }
 
-const REMOVE_COMMENT = "REMOVE_COMMENT";
+export const REMOVE_COMMENT = "REMOVE_COMMENT";
 
 function removeComment(id) {
   return {
@@ -29,7 +29,7 @@ function removeComment(id) {
   };
 }
 
-const THUMB_UP_COMMENT = "THUMB_UP_COMMENT";
+export const THUMB_UP_COMMENT = "THUMB_UP_COMMENT";
 
 function thumbUpComment(id) {
   return {
@@ -38,7 +38,7 @@ function thumbUpComment(id) {
   };
 }
 
-const THUMB_DOWN_COMMENT = "THUMB_DOWN_COMMENT";
+export const THUMB_DOWN_COMMENT = "THUMB_DOWN_COMMENT";
 
 function thumbDownComment(id) {
   return {
@@ -46,18 +46,3 @@ function thumbDownComment(id) {
     id
   };
 }
-
-export { ADD_COMMENT };
-export { addComment };
-
-export { EDIT_COMMENT };
-export { editComment };
-
-export { REMOVE_COMMENT };
-export { removeComment };
-
-export { THUMB_UP_COMMENT };
-export { thumbUpComment };
-
-export { THUMB_DOWN_COMMENT };
-export { thumbDownComment };
